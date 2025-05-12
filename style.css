@@ -75,29 +75,37 @@ img {
   position: relative;
 }
 
-.submenu #carrrito {
+.submenu #carrito {
   display: none;
 }
 
 #carrito {
-  display: none;
   position: absolute;
   right: 0;
-  top: 50px;
-  background-color: white;
-  border: 1px solid #ccc;
-  padding: 10px;
+  top: 100%;
   z-index: 100;
   width: 300px;
 }
 
-.submenu:hover #carrito {
-  display: block;
+.carrito-activo {
+  display: block !important;
   position: absolute;
   right: 0;
   backdrop-filter: blur(10px);
   top: 100%;
   z-index: 1;
+  background-color: #4e4b5076;
+  padding: 20px;
+  min-width: 400px;
+}
+
+submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  backdrop-filter: blur(10px);
   background-color: #4e4b5076;
   padding: 20px;
   min-width: 400px;
